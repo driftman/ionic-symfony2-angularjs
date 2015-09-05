@@ -1,0 +1,21 @@
+<ion-view view-title="Employees">
+	<ion-content>
+		<ion-list>
+			<ion-item class="item-remove-animate item-icon-right" type="item-text-wrap"
+			ng-repeat="employee in employees"
+			 href="#/tab/employees/{{employee.id}}">
+			 <h2>{{employee.secondName}} {{employee.firstName}}</h2>
+			 <p>Age : {{employee.age}}</p>
+			 <p>Id : {{employee.id}} </p>
+			 <i class="icon ion-chevron-right icon-accessory"></i>
+				<ion-option-button class="button-assertive" ng-click="remove(employee.id)">
+		          Delete
+		    </ion-option-button>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
+
+<!--
+
+-->

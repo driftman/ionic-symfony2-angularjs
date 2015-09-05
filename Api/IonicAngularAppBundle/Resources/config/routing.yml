@@ -1,0 +1,3 @@
+api_ionic_angular_app_homepage:
+    resource:   "@ApiIonicAngularAppBundle/Controller/"
+    type:   annotation
